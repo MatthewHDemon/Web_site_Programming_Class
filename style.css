@@ -1,0 +1,250 @@
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-image: url("./assets/modelo-de-nuevo-la-escuela-con-la-línea-fina-fuentes-de-escuela-de-los-iconos-fondo-de-la-educación-elementos-del-estudio-en-97706734.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+p {
+  margin: 16px;
+  font-size: 96px;
+  color: #ccc;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: all 1s ease-in-out;
+  position: relative;
+}
+p::before {
+  content: attr(data-item);
+  transition: all 1s ease-in-out;
+  color: #dddddd;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  overflow: hidden;
+}
+p:hover::before {
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  background: #ffffffc2;
+}
+nav .menuItems {
+  list-style: none;
+  display: flex;
+}
+nav .menuItems li {
+  margin: 25px;
+}
+nav .menuItems li a {
+  text-decoration: none;
+  color: #8f8f8f;
+  font-size: 18px;
+  font-weight: 400;
+  transition: all 0.5s ease-in-out;
+  position: relative;
+  text-transform: uppercase;
+}
+nav .menuItems li a::before {
+  content: attr(data-item);
+  transition: 0.5s;
+  color: #7a7a7a;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 0;
+  overflow: hidden;
+}
+nav .menuItems li a:hover::before {
+  width: 100%;
+  transition: all 0.5s ease-in-out;
+}
+
+footer {
+  position: absolute;
+  font-size: 12px;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  font-size: 14px;
+  background-color: #f1f1f1;
+  color: #000000;
+  text-align: center;
+}
+footer a {
+  text-decoration: none;
+  color: inherit;
+  border-bottom: 1px solid;
+}
+footer a:hover {
+  border-bottom: 1px transparent;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+:root {
+  --rad: .7rem;
+  --dur: .3s;
+  --color-dark: #2f2f2f;
+  --color-light: #fff;
+  --color-brand: #cccccc;
+  --font-fam: 'Lato', sans-serif;
+  --height: 2rem;
+  --btn-width: 6rem;
+  --bez: cubic-bezier(0, 0, 0.43, 1.49);
+}
+
+form {
+  position: relative;
+  width: 16rem;
+  background: var(--color-brand);
+  border-radius: var(--rad);
+  right: 0;
+  
+}
+
+input,
+button {
+  height: var(--height);
+  border: 0;
+  font-size: 1.2rem;
+}
+
+input[type=search] {
+  outline: 0;
+  width: 100%;
+  background: var(--color-light);
+  padding: 0 1.6rem;
+  border-radius: var(--rad);
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  transition: all var(--dur) var(--bez);
+  transition-property: width, border-radius;
+  z-index: 1;
+  position: relative;
+}
+
+button {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: var(--btn-width);
+  font-weight: bold;
+  background: rgb(255, 255, 255);
+  border-radius: 0 var(--rad) var(--rad) 0;
+}
+
+input:not(:-moz-placeholder-shown) {
+  border-radius: var(--rad) 0 0 var(--rad);
+  width: calc(100% - var(--btn-width));
+}
+
+input:not(:-ms-input-placeholder) {
+  border-radius: var(--rad) 0 0 var(--rad);
+  width: calc(100% - var(--btn-width));
+}
+
+input:not(:placeholder-shown) {
+  border-radius: var(--rad) 0 0 var(--rad);
+  width: calc(100% - var(--btn-width));
+}
+input:not(:-moz-placeholder-shown) + button {
+  display: block;
+}
+input:not(:-ms-input-placeholder) + button {
+  display: block;
+}
+input:not(:placeholder-shown) + button {
+  display: block;
+}
+
+label {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+.searcherIcon img {
+  width: 20px;
+}
+
+.slider_container {
+    display: flex;
+    justify-content: center;
+    overflow-x: scroll;
+    width: 85%;
+    justify-content: flex-start;
+}
+
+.recomendations_slider {
+  display: flex;
+  justify-content: start;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 350px;
+  border-radius: 8px;
+  margin: 15px;
+}
+
+#card1 {
+  background-image: url("./assets/fondo-matematicas_23-2148146270.jpg");
+  background-size: cover;
+}
+#card2 {
+  background-image: url("./assets/maxresdefault.jpg");
+  background-size: cover;
+  background-position: center;
+}
+#card3 {
+  background-image: url("./assets/physics.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+body::-webkit-scrollbar {
+  width: 12px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: orange;        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: blue;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 3px solid orange;  /* creates padding around scroll thumb */
+}
