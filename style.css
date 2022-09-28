@@ -8,8 +8,7 @@ body {
   display: flex;
   flex-direction: column;
   background-image: url("./assets/modelo-de-nuevo-la-escuela-con-la-línea-fina-fuentes-de-escuela-de-los-iconos-fondo-de-la-educación-elementos-del-estudio-en-97706734.jpg");
-  background-repeat: no-repeat;
-  background-size:cover;
+  background-size:contain;
   justify-content: center;
   justify-items: center;
   align-items: center;
@@ -234,6 +233,26 @@ label {
   background-size: cover;
   background-position: center;
 }
+#card4 {
+  background-image: url("./assets/educacion_fisica.png");
+  background-size: cover;
+  background-position: center;
+}
+#card5 {
+  background-image: url("./assets/art.jpg");
+  background-size: cover;
+  background-position: center;
+}
+#card6 {
+  background-image: url("./assets/quimica.jpg");
+  background-size: cover;
+  background-position: center;
+}
+#card7 {
+  background-image: url("./assets/music.jpg");
+  background-size: cover;
+  background-position: center;
+}
 
 body::-webkit-scrollbar {
   width: 12px;               /* width of the entire scrollbar */
@@ -247,4 +266,38 @@ body::-webkit-scrollbar-thumb {
   background-color: blue;    /* color of the scroll thumb */
   border-radius: 20px;       /* roundness of the scroll thumb */
   border: 3px solid orange;  /* creates padding around scroll thumb */
+}
+.recomendaded_container {
+  display: flex;
+  width: 100%;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+  
+}
+.recent_posts {
+  display: flex;
+  background-color: #2f2f2f;
+  flex-wrap: wrap;
+  width: 50%;
+  justify-content: center;
+}
+.recent_posts p {
+  text-align: justify;
+}
+
+.recent_posts img {
+  width: 350px;
+  height: 250px;
+}
+
+.recent_posts p {
+  font-size: 1rem;
+  color: #000000;
+}
+
+.recent_posts_card {
+  width: 380px;
+  background-color: red;
+  margin: 20px;
+  padding: 18px;
 }
